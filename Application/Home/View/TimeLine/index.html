@@ -1,0 +1,129 @@
+<include file="./Public/header.html" />
+<link href="<?php echo CSS_PATH; ?>/timeLine.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>/linestyle.css" />
+
+<div id="timeLineWrap">
+    <div id="timeLineWrapper" class="clear">
+	<div class="topWrapper">
+	    <div class="delBtnWrap">
+		<input type="button" id="showDelChose" value="批量删除">
+	    </div>	    
+	</div>
+	<div class="delChose" id="delChose" style="display: none;">
+	    <span>确定删除所选广播？</span><br>
+	    <label class="gb_btn gb_btn1"><input type="button" id="abatchDelBtn" value="确定" class="t"></label>
+	    <label class="gb_btn gb_btn5"><input type="button" id="hiddenDelChose" value="取消" class="t"></label>
+	</div>
+        <div class="timeLineMain">
+            <section class="timeLinemain"> 
+                <ul class="timeline">
+                </ul>
+                <div id='showMore' class="showMore"><img src="<?php echo IMAGES_PATH; ?>/home/more.gif" /><div class="moreWords">正在加载。。</div></div>            
+            </section>
+        </div><!-- /container -->
+        <div style="text-align:center;clear:both">
+        </div>
+    </div>    
+</div>
+<script src="<?php echo JS_PATH; ?>/modernizr.custom.63321.js"></script>
+<script>
+    $(function() {
+	var startId = 0;
+	loadBlogs();
+	function loadBlogs() {
+	    $.get("{:U('TimeLine/moreTimeLine')}?startId=" + startId + "&t=" + new Date().getTime(), function(json) {
+		var blogs = eval("(" + json + ")");
+		var blog = "";
+		if (blogs == null) {
+		    $('.moreWords').html('没有更多微博');
+		}
+		var l = blogs.length;
+		startId = startId + l;
+		for (var i = 0; i < l; i++) {
+		    blog += "<li class='event'>\
+			<input type='radio' name='tl-group'/>\
+			<label></label>\
+			<div class='thumb' style='background-image: url(" + blogs[i]['head'] + ");'><span></span></div>\
+			<div class='content-perspective'>\
+			    <div class='content'>\
+				<div class='content-inner'>\
+				    <h5>" + blogs[i]['nick'] + "<input type='checkbox' name='selectedDelBlogs' class='selectedDelBlogs' value='" + blogs[i]['openid'] + "&" + blogs[i]['id'] + "&" + blogs[i]['blog_type'] + "'>";
+				if (blogs[i]['blog_type'] == 'tencent') {
+				    blog += "<div class='bicon' style='background-image: url(http://localhost/tweibo1.0beta/Public/images/timeline/tencenticon32.png);'></div>";
+				}
+				blog += "<div class='btime'>" + blogs[i]['time'] + "</div></h5>\
+				    <p>" + blogs[i]['text'] + "</br>";
+				if (blogs[i]['bigimage'] != "/460") {
+				    blog += "<img class='smileimg' src=" + blogs[i]['bigimage'] + " style='display: inline;max-width:460px'>";
+				}
+				blog += "  </p>\
+				</div>\
+			    </div>\
+			</div>\
+		    </li>";
+		}
+		$(".timeline").append(blog);
+	    });
+	}
+	var top = 0;
+	$(window).bind("scroll", function() {
+	    $('.timeline').each(function() {
+		var fold = $(window).height() + $(window).scrollTop();
+		if ($(window).scrollTop() > top + 200) {
+		    if (fold >= $('#showMore').offset().top + 50)
+		    {
+			top = $(window).scrollTop();
+			loadBlogs();
+		    }
+		}
+	    });
+	});
+	//显示确认删除选项
+	$("#showDelChose").click(function(){
+	    var test =  $("input[name='selectedDelBlogs']");
+	    var flag = true;
+	    for (var i = 0; i < test.length ; i ++ )
+	    {
+		if(test[i].checked ){
+		    flag = false;
+		    $("#delChose").css("display", "block");
+		    break;
+		}
+	    }
+	    if(flag){
+		showTipsMsg("点你妹啊，没选你丫点啥！");
+	    } 
+	});
+	$("#hiddenDelChose").click(function(){
+	    $("#delChose").css("display", "none");
+	});
+	//ajax批量删除微博
+	$("#abatchDelBtn").bind("click", function() {
+	    var blogs = [];
+	    $("input[name='selectedDelBlogs']:checked").each(function() {
+		blogs.push($(this).val());
+	    });
+	    $.ajax({
+		type: 'POST',
+		url: "{:U('TimeLine/abatchDelBlogs')}",
+		data: {"selectSyn": blogs,"t":new Date().getTime()},
+		dataType: 'text',
+		success: function(result) {
+		    $("#delChose").css("display", "none");
+		    if (result !== "") {
+			showTipsMsg("出错啦：" + result);
+		    }
+		    $(".timeline").html("");
+		    startId = 0;
+		    loadBlogs();
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown) {
+		    $("#delChose").css("display", "none");
+		    showTipsMsg("无法连接服务器");
+		}
+	    });
+	});
+    });
+
+</script>
+<include file="./Public/footer.html" />

@@ -1,0 +1,661 @@
+[ 2014-01-21T10:42:28+08:00 ] 127.0.0.1 /tweibo2.0/index.php
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.016000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_begin ] --START--
+INFO: [ view_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vo D:\xampp\htdocs\tweibo2.0\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.224013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.224013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T10:42:36+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.332019s ]
+SQL: SELECT * FROM `t_user` WHERE ( `username` = 'admin' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.032002s ]
+INFO: [ view_begin ] --START--
+INFO: [ view_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.206012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.206012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T10:42:37+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T10:47:12+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-01-21T10:47:25+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T10:47:45+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T10:47:57+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T11:14:03+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.354021s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 473 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 518 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 521 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 518 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 521 行.
+SQL: SELECT * FROM `t_user_member` WHERE ( (`uid` = null) AND (`uid` = null)  )  [ RunTime:0.031002s ]
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 64 行.
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 72 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 81 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 97 行.
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 98 行.
+NOTIC: [8] Undefined index: username D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 99 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 104 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 105 行.
+
+[ 2014-01-21T11:16:24+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.020001s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 473 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 518 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 521 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 518 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 521 行.
+SQL: SELECT * FROM `t_user_member` WHERE ( (`uid` = null) AND (`uid` = null)  )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 64 行.
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 72 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 81 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 97 行.
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 98 行.
+NOTIC: [8] Undefined index: username D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 99 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 104 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 105 行.
+
+[ 2014-01-21T11:18:00+08:00 ] 127.0.0.1 /tweibo2.0/index.php
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_begin ] --START--
+INFO: [ view_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: vo D:\xampp\htdocs\tweibo2.0\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 111 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.297017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.297017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T11:18:43+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 19 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.037002s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 473 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 518 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 521 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 517 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 518 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\tweibo2.0\ThinkPHP\Library\Think\Db.class.php 第 521 行.
+SQL: SELECT * FROM `t_user_member` WHERE ( (`uid` = null) AND (`uid` = null)  )  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 20 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 64 行.
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/Array/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 72 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 81 行.
+NOTIC: [8] Undefined variable: userArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 97 行.
+NOTIC: [8] Undefined index: nickname D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 98 行.
+NOTIC: [8] Undefined index: username D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 99 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 104 行.
+NOTIC: [8] Undefined variable: memberArr D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 105 行.
+
+[ 2014-01-21T11:32:13+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T11:32:45+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.021002s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.091005s ]
+
+[ 2014-01-21T11:34:19+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant __OAuth__ - assumed '__OAuth__' D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+NOTIC: [2] require_once(__OAuth__/Tencent.php): failed to open stream: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+
+[ 2014-01-21T11:34:44+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.024002s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant __OAuth__ - assumed '__OAuth__' D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+NOTIC: [2] require(__OAuth__/Tencent.php): failed to open stream: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+
+[ 2014-01-21T12:41:17+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.060003s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.549032s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.412024s ]
+NOTIC: [8] Use of undefined constant __OAuth__ - assumed '__OAuth__' D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+NOTIC: [2] require(__OAuth__/Tencent.php): failed to open stream: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+
+[ 2014-01-21T12:41:59+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] require(/tweibo2.0/Public/HomeOAuth/Tencent.php): failed to open stream: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\WeiboController.class.php 第 29 行.
+
+[ 2014-01-21T12:54:42+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.001000s ]
+
+[ 2014-01-21T13:04:19+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:04:29+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.112007s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.001000s ]
+
+[ 2014-01-21T13:19:10+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:19:44+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:19:53+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:23:33+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:23:48+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-01-21T13:24:08+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:45:24+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-01-21T13:45:49+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:47:56+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:48:11+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:52:25+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-01-21T13:53:20+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:55:31+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:55:32+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:55:32+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:55:32+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:55:33+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T13:55:33+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T14:09:01+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T14:09:03+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-01-21T14:09:31+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.362021s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.069004s ]
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 26 行.
+
+[ 2014-01-21T14:10:35+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.032002s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 26 行.
+
+[ 2014-01-21T14:10:36+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 26 行.
+
+[ 2014-01-21T14:18:41+08:00 ] 127.0.0.1 /tweibo2.0/index.php/Home/Home/index.html
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ path_info ] --START--
+INFO: [ path_info ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+INFO: [ action_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `t_user_member` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `t_user_member` WHERE ( `uid` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant DOCUMENT_ROOT - assumed 'DOCUMENT_ROOT' D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/,D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/):  D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] opendir(D:/xampp/htdocs/tweibo2.0/Public/UpLoads/1/): failed to open dir: No such file or directory D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] readdir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 112 行.
+NOTIC: [2] closedir() expects parameter 1 to be resource, boolean given D:\xampp\htdocs\tweibo2.0\Application\Common\Common\function.php 第 122 行.
+NOTIC: [8] Undefined index: memberId D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 17 行.
+NOTIC: [8] Undefined index: access D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 21 行.
+NOTIC: [8] Undefined index: unit D:\xampp\htdocs\tweibo2.0\Application\Home\Controller\HomeController.class.php 第 26 行.
+

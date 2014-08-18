@@ -1,0 +1,161 @@
+<include file="./Public/header.html" />
+<link href="<?php echo CSS_PATH; ?>/contorlMember.css" rel="stylesheet" type="text/css" />
+<div id="contorlWrap">
+    <div id="contorlWrapper" class="clear">
+        <div class="contorlList">            
+            <ul class="choseContorl">
+                <li id="tencent_top" class="unit">
+                    <a href="javascript:void(0)" onclick="showMember('tencent')" id="tencent_member" class="contorl select">
+                        <span class="text">腾讯微博</span>
+                    </a>
+                </li>
+                <li id="sina_top" class="unit">
+                    <a href="javascript:void(0)" onclick="showMember('sina')" id="sina_member" class="contorl">
+                        <span class="text">新浪微博</span>
+                    </a>
+                </li>
+                <li id="renren_top" class="unit">
+                    <a href="javascript:void(0)" onclick="showMember('renren')" id="renren_member" class="contorl">
+                        <span class="text">人人</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contorlMain" >
+            <div class="addNewMember">
+                <div class="memberNum">
+                    <span>总授权数  ： 0</span>
+                </div>
+                <div class="addMember">
+                    <a href="">新增授权</a>                 
+                </div>
+            </div>
+            <ul class="memberList">
+<!--                <li class="viewMember">
+                    <div class="memberCard">
+                        <div class="cardDetail">
+                            <div class="cardImg">
+                                <img src="http://localhost/tweibo1.0beta/Public/images/home/100.jpg"/>
+                            </div>
+                            <div class="memberinfo">
+                                <span class="memberName">Anarkh</span>
+                                <span class="birth">生日 ：1990 04 22</span>
+                                <span class="exp">经验：1111</span>  
+                                <span class="level">微博等级：7</span>
+                                <div class="memberTags">
+                                    <div class="memberTag">  
+                                        <span class="text">倒立能睡着</span>
+                                    </div>
+                                    <div class="memberTag">  
+                                        <span class="text">淡定</span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="revokeOauth">
+                            <a href="#" title="取消授权此用户">
+                                <img src="<?php echo IMAGES_PATH; ?>/revoke.gif"/>
+                                取消授权
+                            </a>
+                        </div>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        showMember("{$selecttype}");
+    });
+    //显示授权用户 AJAX
+    function showMember(blogtype){ 
+        if(blogtype == ""){
+            blogtype = "tencent";
+        }
+        var xmlHttp=GetXmlHttpObject();
+        if (xmlHttp==null){
+            alert ("Browser does not support HTTP Request");
+            return;
+        }
+        var url="{:U('ContorlMember/viewmymember')}?blogtype=" + blogtype + "&t=" + new Date().getTime();
+        xmlHttp.onreadystatechange = function(){ 
+            if (xmlHttp.readyState==4&&xmlHttp.status==200){ 
+                var json = xmlHttp.responseText;
+                $(".contorl").attr("class", "contorl");
+                $("#"+blogtype+"_member").attr("class", "contorl select");
+                $(".memberList").html("");
+                $(".memberNum").find("span").html("总授权数  ： 0");
+                $(".addMember").find("a").attr("href", "{:U('ContorlMember/authUser')}?blogtype="+blogtype);
+                if(json != null){
+                    var r = eval("("+json+")");
+                    var l = r.length;
+                    $(".memberNum").find("span").html("总授权数  ： "+l);
+                    var list = "";
+                    for(var i = 0; i<l;i++){
+                        list += "<li class='viewMember' id='"+r[i]['data']['openid']+"'>\
+                            <div class='memberCard'>\
+                                <div class='cardDetail'>\
+                                    <div class='cardImg'><img src="+r[i]['data']['headurl']+"/></div>\
+                                    <div class='memberinfo'>\
+                                        <span class='memberName'>"+r[i]['data']['nick']+"</span>\
+                                        <span class='birth'>生日 ："+r[i]['data']['birth_year']+"-"+r[i]['data']['birth_month']+"-"+r[i]['data']['birth_day']+"</span>\
+                                        <span class='exp'>经验："+r[i]['data']['exp']+"</span>\
+                                        <span class='level'>微博等级："+r[i]['data']['level']+"</span>\
+                                    <div class='memberTags'>";
+                        var tags = r[i]['data']['tag'];  
+                        if(tags != null){
+                            for(var j = 0, tagl =tags.length; j<tagl; j++){
+                                list += "<div class='memberTag'><span class='text'>"+tags[j]['name']+"</span></div>";
+                            }
+                        }                        
+                        list += "</div></div></div>\
+                                <div class='revokeOauth'>\
+                                    <a href='javascript:void(0)' onclick=\"removeMember('"+r[i]['data']['openid']+"')\" title='取消授权此用户'><img src=\"<?php echo IMAGES_PATH; ?>/revoke.gif\"/>取消授权</a>\
+                                </div></div></li>";  
+                    }
+                    $(".memberList").html(list);
+                }
+            } 
+        }; 
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send(null);
+    }
+    //获取ajax request对象
+    function GetXmlHttpObject(){
+        var xmlHttp=null;
+        try{
+            // Firefox, Opera 8.0+, Safari
+            xmlHttp=new XMLHttpRequest();
+        }
+        catch (e){
+            //Internet Explorer
+            try{
+                xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+            }
+            catch (e){
+                xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        return xmlHttp;
+    } 
+    //移除授权用户 AJAX
+    function removeMember(openid){ 
+        var xmlHttp=GetXmlHttpObject();
+        if (xmlHttp==null){
+            alert ("Browser does not support HTTP Request");
+            return;
+        }
+        var url="{:U('ContorlMember/removeMember')}?openid=" + openid + "&t=" + new Date().getTime();
+        xmlHttp.onreadystatechange = function(){ 
+            if (xmlHttp.readyState==4&&xmlHttp.status==200){ 
+                var json = xmlHttp.responseText;
+                alert(json);
+                $("#"+openid).remove();
+            } 
+        }; 
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send(null);
+    }
+</script>
+<include file="./Public/footer.html" />

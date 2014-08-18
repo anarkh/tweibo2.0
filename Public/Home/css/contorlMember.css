@@ -1,0 +1,201 @@
+/* 
+    Document   : contorMember
+    Created on : 2013-4-18, 16:55:36
+    Author     : lichenyang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*body css*/
+
+#contorlWrap {
+    padding-top: 55px;
+    _padding-top: 15px;
+    margin-bottom: 80px;
+}
+#contorlWrapper {
+    position: relative;
+    z-index: 1;
+    width: 960px;
+    min-height: 650px;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #521005;
+    padding-bottom: 50px;
+}
+.contorlList{
+    z-index: 3;
+    width: 860px;
+    padding-top: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.contorlMain{
+    z-index: 3;
+    width: 860px;
+    min-height: 500px;
+    margin: 0 auto;
+    background: #F5F5F5;
+    border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    padding-top: 10px;
+}
+.addNewMember{
+    width: 800px;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 10px;
+    margin-top: 10px;   
+}
+.addNewMember .memberNum{
+    padding: 6px 30px;
+    float: left;
+}
+.addNewMember .memberNum span{
+    font-size: 16px;
+    color: #006a92;
+    font-weight: 800;
+}
+.addNewMember .addMember{
+    height: 25px;
+    margin: 5px 15px;
+    float: right;
+    background-color: #7bd6f6;
+    width: 100px;
+    text-align: center;
+    border-radius:8px;
+    padding-top: 3px;
+}
+.addNewMember .addMember a{
+   color: white;
+}
+.choseContorl{
+    float: left;
+    position: relative;
+    z-index: 5;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.choseContorl .unit{
+    float: left;
+}
+.choseContorl .contorl {
+    display: block;
+    float: left;
+    padding: 8px 1px 0 1px;
+    height: 32px;
+    font-size: 14px;
+    background: #9F7D50;    
+}
+.choseContorl .select {
+    background: #F5F5F5;
+    border: 1px solid #E4E4E4;
+    border-bottom: 0;
+    padding-top: 7px;
+    color: #f8c24f;
+}
+.choseContorl .contorl .text {
+    display: block;
+    float: left;
+    padding: 0 20px;
+    line-height: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 1px solid #E4E4E4;
+    margin-left: -2px;
+}
+
+.memberList{
+    width: 800px;
+    margin: 0 auto;
+}
+.memberList .viewMember{
+    width: 800px;
+    height: 90px;
+    padding: 10px 0;
+}
+.memberCard{
+    border-radius: 8px;
+    background: white;
+    height: 90px;
+}
+.memberCard:hover{
+    border: 1px solid #7bd6f6;
+}
+.cardDetail{
+    position: absolute;
+    margin: 5px 15px;
+    height: 80px;
+}
+.cardDetail .cardImg{
+    float: left;
+    margin-right: 20px;
+}
+.cardDetail .cardImg img{
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+.cardDetail .memberinfo{
+    float: left;
+    height: 80px;
+    min-width: 200px;
+}
+.cardDetail .memberinfo .memberName{
+    font-size: 16px;
+    color: #006a92;
+    font-weight: 800;
+}
+.cardDetail .memberinfo .birth{
+    margin-left: 30px;
+    font-size: 10px;
+    color: #999;
+}
+.cardDetail .memberinfo .exp{
+    margin-left: 30px;
+    font-size: 10px;
+    color: #999;
+}
+.cardDetail .memberinfo .level{
+    margin-left: 30px;
+    font-size: 10px;
+    color: #999;
+}
+.cardDetail .memberinfo .memberTags{
+    width: 500px;
+    height: 50px;
+    overflow: hidden;
+}
+.memberTag{
+    position: relative;
+    background: #7bd6f6;
+    padding: 0 6px;
+    height: 19px;
+    margin: 4px 7px 3px 0;
+    float: left;
+}
+.memberTag .text{
+    color: white;
+}
+.revokeOauth{
+    float: right;
+    width: 50px;
+    height: 78px;
+    border-radius: 5px;
+    border: 1px solid #521005;
+    margin: 5px 15px;
+}
+.revokeOauth img{
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 3px;
+}

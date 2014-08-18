@@ -1,0 +1,86 @@
+/* 
+    Document   : timeLine
+    Created on : 2013-4-27, 14:39:52
+    Author     : lichenyang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#timeLineWrap {
+    padding-top: 55px;
+    _padding-top: 15px;
+    margin-bottom: 80px;
+}
+#timeLineWrapper {
+    position: relative;
+    z-index: 1;
+    width: 960px;
+    min-height: 650px;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #521005;
+    padding-bottom: 50px;
+}
+.timeLineMain {
+    z-index: 3;
+    width: 860px;
+    min-height: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.topWrapper{
+    height: 50px;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 0 50px;
+}
+.delBtnWrap{
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    background-color: #43ABDC;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #288FC9;
+    height: 28px;
+    float: right;
+    margin: 11px 30px;
+    cursor: pointer;
+}
+.delBtnWrap input{
+    border-color: #CFCFCF;
+    background-position: 0 -162px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    background: none;
+    height: 28px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+}
+.delBtnWrap:hover {
+    -moz-box-shadow: 0 0 5px #D6F4FF inset;
+    -webkit-box-shadow: 0 0 5px #D6F4FF inset;
+    box-shadow: 0 0 5px #D6F4FF inset;
+    background-position: 0 -186px;
+}
+.delChose {
+    right: 10px;
+    margin-top: -10px;
+}
+.delChose .gb_btn{
+    height: 21px;
+}
+.selectedDelBlogs{
+    float: right;
+    margin: 18px 0 18px 10px;
+}

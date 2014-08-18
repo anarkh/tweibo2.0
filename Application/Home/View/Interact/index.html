@@ -1,0 +1,255 @@
+<include file="./Public/header.html" />
+<link href="<?php echo CSS_PATH; ?>/interact.css" rel="stylesheet" type="text/css" />
+<div id="interactWrap">
+    <div id="interactWrapper" class="clear">
+        <div class="manage_mrc clear">
+            <div class="memberside">
+                <ul class="manageNav">
+                    <volist name="member" id="member">
+                        <li class="member" id="{$member.data.openid}">
+                            <div class="fm">
+                                <a href="javascript:void(0)">{$member.data.nick}</a> 
+                            </div>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="side">
+                <ul class="manageNav">
+                    <li class="interact current" id="fanslist">
+                        <div class="fm">
+                            <a href="javascript:void(0)">
+                                <i class="gj gj_ico_tz"></i>我的听众</a> 
+                            <b class="a a5 a_l"><u></u></b>
+                        </div>
+                    </li>
+                    <li class="interact" id="idollist">
+                        <div class="fm">
+                            <a href="javascript:void(0)">
+                                <i class="gj gj_ico_st"></i>我的收听</a>
+                            <b class="a a5 a_l"><u></u></b>
+                        </div>
+                    </li>
+                    <!--                    <li class="interact" id="mutual_list">
+                                            <div class="fm">
+                                                <a href="javascript:void(0)">
+                                                    <i class="gj gj_ico_sx"></i>双向收听</a>
+                                                <b class="a a5 a_l"><u></u></b>
+                                            </div>
+                                        </li>-->
+                    <li class="interact" id="speciallist">
+                        <div class="fm">
+                            <a href="javascript:void(0)">
+                                <i class="gj gj_ico_tj"></i>特别收听</a>
+                            <b class="a a5 a_l"><u></u></b>
+                        </div>
+                    </li>
+                    <li class="interact" id="blacklist">
+                        <div class="fm">
+                            <a href="javascript:void(0)">
+                                <i class="gj gj_ico_md"></i>我的名单</a>
+                            <b class="a a5 a_l"><u></u></b>
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+            <div class="main">
+                <div class="p40">
+                    <div class="manage_mrc_hd clear">
+                        <div class="left">
+                            <div class="tit">总人数:<span class="c_tx5"></span></div>
+                        </div>
+                    </div>
+                    <div class="listWrapper">
+                        <!--                        <ul class="LC">
+                                                    <volist name="friends" id="f">
+                                                        <li class="userList">
+                                                            <div class="userPic">            
+                                                                <a href="" title="{$f.nick}(@{$f.name})">
+                                                                    <img src={$f.head}></a>
+                                                            </div>
+                                                            <div class="msgBox" uid="{$f.nick}">
+                                                                <div class="fritop">
+                                                                    <div class="userName"><strong>
+                                                                            <a href="http://t.qq.com/{$f.name}" title="{$f.nick}(@{$f.name})">{$f.nick}</a>
+                                                                            <if condition="$f.sex = 1">
+                                                                                <span><i class="ico_male"></i></span>
+                                                                                <elseif condition="$f.sex = 2">
+                                                                                    <span><i class="ico_female"></i></span>
+                                                                            </if>
+                                                                        </strong></div>
+                                                                    <div class="funBox">
+                                                                        <div class="foStatus" state="1" style="display:none"><span class="followEach"><em class="ico_bfo"></em>已互听,</span>
+                                                                            <a href="javascript:void(0)" class="delAttention" onclick="follow('AMagic_key',this,0)" id="unfollowBtn">取消</a>
+                                                                        </div>
+                                                                        <input type="button" class="addAttention" value="收听" onclick="follow('AMagic_key',this,1);"></div>
+                                                                </div>
+                                                                <div class="userNums">
+                                                                    <span class="cNote" style="margin-right:0px">{$f.location} | </span>
+                                                                    <span class="cNote" style="margin-right:0px">听众<a href="javascript:void(0)"><strong id="followedNum_AMagic_key">{$f.fansnum}</strong></a>人 | </span>
+                                                                    <span class="cNote" style="margin-right:0px">收听<a href="javascript:void(0)"><strong>{$f.idolnum}</strong></a>人</span>
+                                                                </div>
+                                                        </li>
+                                                    </volist>   
+                                                </ul>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("#{$firstmember}").attr("class", "member current");
+        viewFriends("{$firstmember}","fanslist");
+        $(".member").click(function(){
+            $(".member").attr("class", "member");
+            var id = $(this).attr('id');
+            viewFriends(id,"fanslist",0);
+            $(this).attr("class", "member current");
+	    $(".interact").attr("class", "interact");
+	    $("#fanslist").attr("class", "interact current");
+        });
+                
+        $(".interact").click(function(){
+            $(".interact").attr("class", "interact");
+            var id = $("li[class='member current']").attr('id');
+            var relation = $(this).attr('id');
+            viewFriends(id,relation,0);
+            $(this).attr("class", "interact current");
+        });
+        
+
+    });
+    viewFriends('{$firstmember}','fanslist',0);
+    //生成关系名单列表
+    function viewFriends(id,rela,startindex){ 
+        var xmlHttp=GetXmlHttpObject();
+        if (xmlHttp==null){
+            alert ("Browser does not support HTTP Request");
+            return;
+        }
+        var url="{:U('Interact/viewFriends')}?nowmember="+id + "&relation=" + rela + "&startindex=" + startindex + "&t=" + new Date().getTime();
+        xmlHttp.onreadystatechange = function(){ 
+            if (xmlHttp.readyState==4&&xmlHttp.status==200){ 
+                var json = xmlHttp.responseText;
+                var farray = eval("("+json+")");
+                var friends = "";
+                $(".c_tx5").html("");
+                $(".listWrapper").html("");
+                var f = farray['data']['info'];
+                var l = f.length;
+                friends += "<ul class='LC'>";
+                for(var i = 0; i < l; i++){
+                    friends += "<li class='userList'>\
+                                    <div class='userPic'>\
+                                        <a href='javascript:void(0)' title='"+f[i]['nick']+"(@"+f[i]['name']+")'>\
+                                            <img src="+f[i]['head']+"></a>\
+                                    </div>\
+                                    <div class='msgBox' uid='"+f[i]['nick']+"'>\
+                                        <div class='fritop'>\
+                                            <div class='userName'><strong>\
+                                                    <a href='http://t.qq.com/"+f[i]['name']+"' title='"+f[i]['nick']+"(@"+f[i]['name']+")'  target='_blank' style='margin-right: 10px;'>"+f[i]['nick']+"</a>";
+                    if(f[i]['sex'] == 1){
+                        friends += "<span><i class='ico_male'></i></span>";
+                    }else if(f[i]['sex'] == 2){
+                        friends += "<span><i class='ico_female'></i></span>";
+                    }
+                    friends +=   "</strong></div>\
+                                            <div class='funBox'>";
+                    if(f[i]['isidol'] == true){
+                        friends += "<div class='foStatus' id='foStatus"+f[i]['openid']+"' style=''><span class='followEach'><em class='ico_bfo'></em>已互听,</span>\
+                                          <a href='javascript:void(0)' class='delAttention' onclick=\"delFriends('"+id+"','"+f[i]['openid']+"');\" id='unfollowBtn'>取消</a>\
+                                     </div>\
+                                    <input style='display:none' id='addAttention"+f[i]['openid']+"' type='button' class='addAttention' value='收听' onclick=\"delFriends('AMagic_key',this,1);\"></div>"
+                    } else{
+                        friends += "<div class='foStatus' id='foStatus"+f[i]['openid']+"' style='display:none'><span class='followEach'><em class='ico_bfo'></em>已互听,</span>\
+                                          <a href='javascript:void(0)' class='delAttention' onclick=\"delFriends('"+id+"','"+f[i]['openid']+"');\" id='unfollowBtn'>取消</a>\
+                                     </div>\
+                                    <input style='' id='addAttention"+f[i]['openid']+"' type='button' class='addAttention' value='收听' onclick=\"delFriends('');\"></div>"
+                    }                           
+                    friends +=     "</div>\
+                                        <div class='userNums'>\
+                                            <span class='cNote' style='margin-right:0px'>"+f[i]['location']+" | </span>\
+                                            <span class='cNote' style='margin-right:0px'>听众<a href='javascript:void(0)'><strong id='followedNum_AMagic_key'>"+f[i]['fansnum']+"</strong></a>人 | </span>\
+                                            <span class='cNote' style='margin-right:0px'>收听<a href='javascript:void(0)'><strong>"+f[i]['idolnum']+"</strong></a>人</span>\
+                                        </div>\
+                                </li>";
+                }
+                friends += "</ul>";
+                var next = farray['data']['nextstartpos'];
+                var per = next - 20;
+                friends += "<div id='pageNav'>\
+                            <a href='javascript:void(0)' onclick=\"viewFriends('"+id+"','"+rela+"','"+per+"')\" class='pageBtn'>&lt;&lt; 上一页</a>\
+                            <a href='javascript:void(0)' onclick=\"viewFriends('"+id+"','"+rela+"','"+next+"')\" class='pageBtn'>下一页 &gt;&gt;</a>\
+                        </div>";
+                $(".c_tx5").html(farray['num']+"人");
+                $(".listWrapper").html(friends);
+            } 
+        }; 
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send(null);
+    }
+    
+    //收听用户--api关闭
+    function addFriends(){ 
+        var xmlHttp=GetXmlHttpObject();
+        if (xmlHttp==null){
+            alert ("Browser does not support HTTP Request");
+            return;
+        }
+        var url="{:U('Interact/viewFriends')}?nowmember=";
+        xmlHttp.onreadystatechange = function(){ 
+            if (xmlHttp.readyState==4&&xmlHttp.status==200){ 
+                var json = xmlHttp.responseText;
+                
+            } 
+        }; 
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send(null);
+    }
+    
+    //取消用户
+    function delFriends(id,fid){ 
+        var xmlHttp=GetXmlHttpObject();
+        if (xmlHttp==null){
+            alert ("Browser does not support HTTP Request");
+            return;
+        }
+        var url="{:U('Interact/delFriend')}?nowmember=" + id + "&fopenid=" + fid + "&t=" + new Date().getTime();
+        xmlHttp.onreadystatechange = function(){ 
+            if (xmlHttp.readyState==4&&xmlHttp.status==200){ 
+                var msg = xmlHttp.responseText;
+                if(msg == 'ok'){
+                    $('#foStatus'+fid).attr('style' , "display:none");
+                    $('#addAttention'+fid).attr('style' , "");
+                }else{
+                    alert(msg);
+                }
+            } 
+        }; 
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send(null);
+    }
+    
+    //获取ajax request对象
+    function GetXmlHttpObject(){
+        var xmlHttp=null;
+        try{
+            // Firefox, Opera 8.0+, Safari
+            xmlHttp=new XMLHttpRequest();
+        }
+        catch (e){
+            //Internet Explorer
+            try{
+                xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+            }
+            catch (e){
+                xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        return xmlHttp;
+    } 
+</script>
+<include file="./Public/footer.html" />
